@@ -13,6 +13,22 @@
 
   gtag('config', 'AW-18515704375');
 </script>
+<!-- Event snippet for جهة اتصال conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18515704375/NIKzCLO3l58dELf0_PxE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <meta name="description" content="لمسة فخامة لتجهيز المناسبات في الدمام والخبر: إيجار كنب، طاولات وكراسي، خيام أوروبية، قهوجيين ومباشرين، عقود لمبات وسماعات وزوالي، جلسات شعبية ومغربية مع التوصيل والتركيب.">
 <link rel="canonical" href="https://www.hafalat22.net/">
 <script type="application/ld+json">
